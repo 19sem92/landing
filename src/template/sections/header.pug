@@ -1,3 +1,26 @@
-//
-   Created by Eugeshka on 02.08.2017.
+header.header
+    .header__top
+        .container
+            .contacts
+                a.contact(href="tel:+380631484769")
+                    i.fa.fa-mobile.contact__icon(aria-hidden="true")
+                    span.contact__text 0631484769
+
+                a.contact(href="mailto:info@ffff.com")
+                    i.fa.fa-envelope.contact__icon--email(aria-hidden="true")
+                    span.contact__taxt info@business.com
+
+                a.facebook-icon(href="facebook.com")
+                    i.fa.fa-facebook(aria-hidden="true")
+    .container
+        .header__bottom
+            .logo: img.logo__picture(src="images/logo.png" alt="logo")
+            nav.nav
+             - var items = ['Home', 'About us', 'Our Approch', 'Our Work']
+               each item in items
+                 if item === "Home"
+                     a.nav__link.nav__link--active(href="#")=item
+                 else
+                     a.nav__link(href="#")= item
+            a.button.header__button.button--red(href="#") Free Consultation
 

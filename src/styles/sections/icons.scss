@@ -3,5 +3,13 @@
 }
 
 .icon-like{
-  @include sprite($like)
+   @include sprite($like)
+}
+
+.icon-book{
+  @include sprite($book)
+}
+
+.icon-message{
+  @include sprite($message)
 }
